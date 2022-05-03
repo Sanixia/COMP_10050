@@ -71,7 +71,8 @@ int main() {
             // Service 1 - Follow
             if (choice == 1)
             {
-
+                scanf("%c", (char *) stdin);
+                follow_user(&twitter_system, j);
             }
 
 
@@ -108,7 +109,7 @@ int main() {
             // Service 6 - End Turn
             if (choice == 6)
             {
-                if (j!=twitter_system.num_users-1) {
+                if (j !=twitter_system.num_users-1) {
                     printf("\nMoving onto next user");
                 }
 
