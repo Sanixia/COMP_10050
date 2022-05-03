@@ -7,8 +7,12 @@ int main() {
     twitter twitter_system;
     create_twitter_system(&twitter_system);
 
-    //implement here the code to print the users
-    // for each user you need to print the username, the number of followers and the number of users that the current user is following
+
+    for(int i = 0; i < twitter_system.num_users; i++){
+        user printUser = twitter_system.max_users[i];
+        printf("User: %s; Followers: %d; Following: %d\n",printUser.username, printUser.num_followers, printUser.num_followers );
+    }
+
 
 
 
