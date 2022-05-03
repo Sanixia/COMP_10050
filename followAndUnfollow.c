@@ -30,6 +30,11 @@ void follow_user(twitter * twitter_system, int userNumber){
 
     strcpy( twitter_system->max_users[userNumber].following[twitter_system->max_users[userNumber].num_following], name);
     twitter_system->max_users[userNumber].num_following++;
+
+
+
+
+
     printf("%s", (twitter_system->max_users[userNumber].following[twitter_system->max_users[userNumber].num_following]));
     printf("%d",(twitter_system->max_users[userNumber].num_following));
 
