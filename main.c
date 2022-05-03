@@ -30,28 +30,40 @@ int main() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // michal section
 
+
+
+    int j;
+    int check = 0;
+    int choice;
+
+
+    for (j=0; j!=twitter_system.num_users; j++)
+    {
+        while (check == 0)
+        {
+            printf("\nPlease choose from one of these functions\n");
+            printf("1) Follow\n");
+            printf("2) Unfollow\n");
+            printf("3) PostFeed\n");
+            printf("4) Delete Account\n");
+            printf("5) End Turn\n\n");
+
+
+            printf("Type in the digit of the function that you'd like to access: ");
+            scanf("%d", &choice);
+
+
+            if (choice <= 5 && choice >= 1) {
+                check = 1;
+
+            } else {
+                printf("\n\n------ INVALID INPUT ------\n");
+                printf("Returning to Main Menu...\n\n\n\n");
+            }
+        }
+    }
 
 
 }
