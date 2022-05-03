@@ -3,4 +3,4 @@ project(COMP_10050 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(COMP_10050 main.c twitter_create.c twitter_create.h followAndUnfollow.c followAndUnfollow.h)
+add_executable(COMP_10050 main.c twitter_create.c twitter_create.h followAndUnfollow.c followAndUnfollow.h feedStack.c feedStack.h)
