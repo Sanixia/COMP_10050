@@ -20,7 +20,7 @@ int main() {
     }
 
 
-    follow_user(&twitter_system);
+
 
 
 
