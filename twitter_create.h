@@ -35,10 +35,10 @@ typedef struct tweet{
 typedef struct user{
     char username[USR_LENGTH];
 
-    char followers[MAX_FOLLOWERS];
+    char followers[MAX_FOLLOWERS][USR_LENGTH];
     int num_followers;
 
-    char following[MAX_FOLLOWING];
+    char following[MAX_FOLLOWING][USR_LENGTH];
     int num_following;
 }user;
 
@@ -52,3 +52,5 @@ typedef struct twitter{
 } twitter;
 
 void create_twitter_system(twitter * twitter_system);
+
+void follow_user(twitter * twitter_system);

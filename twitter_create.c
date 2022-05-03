@@ -37,3 +37,8 @@ void create_twitter_system(twitter * twitter_system){
 
 
 }
+
+
+void follow_user(twitter * twitter_system){
+
+}
