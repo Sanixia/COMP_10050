@@ -22,9 +22,10 @@ void create_twitter_system(twitter * twitter_system){
 
         printf("\nPlease input the username of the current user (max length of a username is 100 characters) and press enter to finish:\n");
 
+
         fgets(twitter_system->max_users[i].username, USR_LENGTH, stdin);
         if(twitter_system->max_users[i].username[strlen(twitter_system->max_users[i].username) - 1] == '\n'){
-            twitter_system->max_users[i].username[strlen(twitter_system->max_users[i].username) - 1] = '\0';
+            twitter_system->max_users[i].username[strlen(twitter_system->max_users[i].username) - 1] = '\0';      //replaces the end of each input with \0 instead of \n otherwise it wouldn't work correctly
         }
 
 
