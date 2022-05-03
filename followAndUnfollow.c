@@ -15,7 +15,7 @@ void follow_user(twitter * twitter_system, int userNumber){
     printf("\nHere is a list of users you haven't followed yet:\n");
 
     for (i = 0; i < twitter_system->num_users; i++){
-        if ( (strcmp( twitter_system->max_users[userNumber].followers[i], twitter_system->max_users[i].username) != 0) && (strcmp( twitter_system->max_users[userNumber].username, twitter_system->max_users[i].username) != 0)){
+        if ( (strcmp( twitter_system->max_users[userNumber].following[i], twitter_system->max_users[i].username) != 0) && (strcmp( twitter_system->max_users[userNumber].username, twitter_system->max_users[i].username) != 0)){
             printf("%s\n",twitter_system->max_users[i].username );
         }
     }
@@ -23,9 +23,8 @@ void follow_user(twitter * twitter_system, int userNumber){
     printf("\nPlease enter the username of the person you want to follow: ");
 
     fgets(name, USR_LENGTH, stdin);
-    if (strlen(name) - 1 == '\n'){
-        name[strlen(name) - 1] = '\0';
-    }
+
+    printf("%s", name);
 
 
     strcpy( twitter_system->max_users[userNumber].following[twitter_system->max_users[userNumber].num_following], name);
@@ -35,7 +34,7 @@ void follow_user(twitter * twitter_system, int userNumber){
 
 
 
-    printf("\n%s", (twitter_system->max_users[userNumber].following[twitter_system->max_users[userNumber].num_following]));
+    printf("\n%s", (twitter_system->max_users[userNumber].following[twitter_system->max_users[userNumber].num_following - 1]));
     printf("\n%d",(twitter_system->max_users[userNumber].num_following));
 
 }
