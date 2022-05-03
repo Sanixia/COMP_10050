@@ -65,6 +65,14 @@ build CMakeFiles/COMP_10050.dir/twitter_create.c.obj: C_COMPILER__COMP_10050_Deb
   TARGET_COMPILE_PDB = CMakeFiles\COMP_10050.dir\
   TARGET_PDB = COMP_10050.pdb
 
+build CMakeFiles/COMP_10050.dir/followAndUnfollow.c.obj: C_COMPILER__COMP_10050_Debug C$:/COMPUTER$ SCIENCE/Stage$ 1$ -$ Semester$ 2/SOFTWARE$ ENGINEERING/COMP_10050/followAndUnfollow.c || cmake_object_order_depends_target_COMP_10050
+  DEP_FILE = CMakeFiles\COMP_10050.dir\followAndUnfollow.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\COMP_10050.dir
+  OBJECT_FILE_DIR = CMakeFiles\COMP_10050.dir
+  TARGET_COMPILE_PDB = CMakeFiles\COMP_10050.dir\
+  TARGET_PDB = COMP_10050.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target COMP_10050
@@ -73,7 +81,7 @@ build CMakeFiles/COMP_10050.dir/twitter_create.c.obj: C_COMPILER__COMP_10050_Deb
 #############################################
 # Link the executable COMP_10050.exe
 
-build COMP_10050.exe: C_EXECUTABLE_LINKER__COMP_10050_Debug CMakeFiles/COMP_10050.dir/main.c.obj CMakeFiles/COMP_10050.dir/twitter_create.c.obj
+build COMP_10050.exe: C_EXECUTABLE_LINKER__COMP_10050_Debug CMakeFiles/COMP_10050.dir/main.c.obj CMakeFiles/COMP_10050.dir/twitter_create.c.obj CMakeFiles/COMP_10050.dir/followAndUnfollow.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\COMP_10050.dir
