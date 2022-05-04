@@ -82,7 +82,6 @@ int main() {
             // Service 2 - Unfollow
             if (choice == 2)
             {
-
                 scanf("%c", (char *) stdin);
                 unfollow_user(&twitter_system, j);
             }
