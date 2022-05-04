@@ -50,7 +50,7 @@ void follow_user(twitter * twitter_system, int userNumber){
             }
 
             for(k = 0;k < twitter_system->num_users;k++){
-                if (strcmp(twitter_system->max_users[k].username, name) == 0){
+                if ((strcmp(twitter_system->max_users[k].username, name) == 0) && (strcmp( twitter_system->max_users[userNumber].username, twitter_system->max_users[k].username) != 0)){
                     checkValidUsername = 1;
                     k = twitter_system->num_users;
                 }
