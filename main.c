@@ -13,6 +13,9 @@ int main() {
 
 
 
+
+
+
     for(int i = 0; i < twitter_system.num_users; i++){  //for loop to print out the username, followers and users following for each user
 
         printf("User: %s; Followers: %d; Following: %d\n",
