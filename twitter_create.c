@@ -12,7 +12,7 @@ void create_twitter_system(twitter * twitter_system){
     twitter_system->num_users = 0;
     twitter_system->num_tweets = 0;
 
-    //printf("Hello to Twitter!\n");
+    printf("Hello to Twitter!\n");
     printf("Please enter the amount of users (1-100) that you want to input into Twitter: ");
 
     scanf("%d", &numOfUsers);
@@ -34,28 +34,8 @@ void create_twitter_system(twitter * twitter_system){
         twitter_system->num_users += 1;
     }
 
+
+
 }
 
 
-void twitterlogo()
-{
-    printf("\n\n\n\n                                    ,(((//((//          ,\n");
-    printf("      (/                         ((((((((((((((//.*(//(,\n");
-    printf("     (////                     /((((((((((((((/(/(((/.  .(\n");
-    printf("     /((/((/(.                (//(((((((((((((((((((((((\n");
-    printf("    ((///(/////(*            (//////(((((///////((/(\n");
-    printf("      /(//((((/(((((/(/(/.    /(((((((((((((((((((((*\t\t\tWELCOME\n");
-    printf("        //((((/(/(((((((////(////(((((((/(((((///(((.\n");
-    printf("     /(((/((((/((((((((((((((//((((((((((((((((((///\n");
-    printf("      /(//((((/(((((((((((((/////(((((((((((((//(((,\t\t\t  TO\n");
-    printf("       *(/((((/(((((((((((((/////(((((((((((((//(((\n");
-    printf("          ///////////////////////////////////////(\n");
-    printf("         (//((/////(((((/////////////(((((///////\t\t\tTWITTER\n");
-    printf("          ,(/(/((((((((((((((//(/(((((((((((///\n");
-    printf("             ((//(((((((((((/////((((((((((/(.\n");
-    printf("                   (/(((/(((/////(((/(((//(\n");
-    printf("              .(/((((((((((((//(((((((((,\n");
-    printf("   ,(((/(/((((/(((((((((((((////////(\n");
-    printf("        .(///(/(//((((((/((//((/\n\n\n\n\n");
-
-};
