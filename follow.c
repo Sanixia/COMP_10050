@@ -9,7 +9,7 @@
 
 void follow_user(twitter * twitter_system, int userNumber){
     int i, j, k;
-    int checkIfInList = 0, checkValidUsername = 0;
+    int checkIfInList = 0, checkAgain = 0, checkValidUsername = 0;
     char name[30];
 
 
@@ -23,6 +23,7 @@ void follow_user(twitter * twitter_system, int userNumber){
             for (j = 0; j < MAX_FOLLOWING; j++){
                 if (strcmp( twitter_system->max_users[userNumber].following[j], twitter_system->max_users[i].username) == 0){
                     checkIfInList = 1;
+                    checkAgain += 1;
                     j = MAX_FOLLOWING;
                 }
             }
@@ -34,7 +35,7 @@ void follow_user(twitter * twitter_system, int userNumber){
     }
 
 
-    if (checkIfInList == 1){
+    if (checkAgain == twitter_system->num_users - 1){
         printf("\nExcept it looks like you followed everyone!\n");
     }
 
