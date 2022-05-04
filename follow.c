@@ -4,8 +4,8 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "twitter_create.h"
-#include "followAndUnfollow.h"
+#include "definitions_and_prototype_file.h"
+
 
 void follow_user(twitter * twitter_system, int userNumber){
     int i, j, k;

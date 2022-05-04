@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "twitter_create.h"
+#include "definitions_and_prototype_file.h"
 
 void create_twitter_system(twitter * twitter_system){
 

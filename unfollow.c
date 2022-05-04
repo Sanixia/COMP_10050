@@ -3,7 +3,9 @@
 //
 
 #include <stdio.h>
-#include "followAndUnfollow.h"
-#include "twitter_create.h"
 
-void unfollow_user(twitter * twitter_system, int userNumber);
+#include "definitions_and_prototype_file.h"
+
+void unfollow_user(twitter * twitter_system, int userNumber){
+
+}
