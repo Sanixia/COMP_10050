@@ -1,4 +1,4 @@
-# Install script for directory: C:/COMPUTER SCIENCE/Stage 1 - Semester 2/SOFTWARE ENGINEERING/COMP_10050
+# Install script for directory: D:/COMP_10050/COMP_10050
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/Applications/Programming/CLion 2021.3.3/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/COMPUTER SCIENCE/Stage 1 - Semester 2/SOFTWARE ENGINEERING/COMP_10050/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/COMP_10050/COMP_10050/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
