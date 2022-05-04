@@ -6,4 +6,8 @@
 #include "followAndUnfollow.h"
 #include "twitter_create.h"
 
-void unfollow_user(twitter * twitter_system, int userNumber);
+void unfollow_user(twitter * twitter_system, int userNumber){
+
+}
+
+
