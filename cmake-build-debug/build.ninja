@@ -79,11 +79,11 @@ build CMakeFiles/COMP_10050.dir/unfollow.c.obj: C_COMPILER__COMP_10050_Debug C$:
   OBJECT_DIR = CMakeFiles\COMP_10050.dir
   OBJECT_FILE_DIR = CMakeFiles\COMP_10050.dir
 
-build CMakeFiles/COMP_10050.dir/CMakeFiles/postTweet.c.obj: C_COMPILER__COMP_10050_Debug C$:/COMPUTER$ SCIENCE/Stage$ 1$ -$ Semester$ 2/SOFTWARE$ ENGINEERING/COMP_10050/cmake-build-debug/CMakeFiles/postTweet.c || cmake_object_order_depends_target_COMP_10050
-  DEP_FILE = CMakeFiles\COMP_10050.dir\CMakeFiles\postTweet.c.obj.d
+build CMakeFiles/COMP_10050.dir/postTweet.c.obj: C_COMPILER__COMP_10050_Debug C$:/COMPUTER$ SCIENCE/Stage$ 1$ -$ Semester$ 2/SOFTWARE$ ENGINEERING/COMP_10050/postTweet.c || cmake_object_order_depends_target_COMP_10050
+  DEP_FILE = CMakeFiles\COMP_10050.dir\postTweet.c.obj.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles\COMP_10050.dir
-  OBJECT_FILE_DIR = CMakeFiles\COMP_10050.dir\CMakeFiles
+  OBJECT_FILE_DIR = CMakeFiles\COMP_10050.dir
 
 
 # =============================================================================
@@ -93,7 +93,7 @@ build CMakeFiles/COMP_10050.dir/CMakeFiles/postTweet.c.obj: C_COMPILER__COMP_100
 #############################################
 # Link the executable COMP_10050.exe
 
-build COMP_10050.exe: C_EXECUTABLE_LINKER__COMP_10050_Debug CMakeFiles/COMP_10050.dir/main.c.obj CMakeFiles/COMP_10050.dir/twitter_create.c.obj CMakeFiles/COMP_10050.dir/follow.c.obj CMakeFiles/COMP_10050.dir/feedStack.c.obj CMakeFiles/COMP_10050.dir/unfollow.c.obj CMakeFiles/COMP_10050.dir/CMakeFiles/postTweet.c.obj
+build COMP_10050.exe: C_EXECUTABLE_LINKER__COMP_10050_Debug CMakeFiles/COMP_10050.dir/main.c.obj CMakeFiles/COMP_10050.dir/twitter_create.c.obj CMakeFiles/COMP_10050.dir/follow.c.obj CMakeFiles/COMP_10050.dir/feedStack.c.obj CMakeFiles/COMP_10050.dir/unfollow.c.obj CMakeFiles/COMP_10050.dir/postTweet.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\COMP_10050.dir
