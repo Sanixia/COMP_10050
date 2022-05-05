@@ -94,8 +94,8 @@ int main( void )
 
 
 
-
-/* display program instructions to user */
+/*
+// display program instructions to user
 void instructions( void )
 {
     printf( "Enter your choice:\n"
@@ -103,7 +103,9 @@ void instructions( void )
             " 2 to delete an element from the list.\n"
             " 3 to print queue.\n"            //// Option 3 was added
             " 4 to end.\n" );
-} /* end function instructions */
+} // end function instructions
+*/
+
 
 
 /* Return 1 if the list is empty, 0 otherwise */
@@ -111,6 +113,8 @@ int isEmpty( ListNodePtr sPtr )
 {
     return sPtr == NULL;
 } /* end function isEmpty */
+
+
 
 
 
@@ -126,20 +130,23 @@ void printList( ListNodePtr currentPtr )
 {
     /* if list is empty */
     if ( currentPtr == NULL ) {
-        printf( "List is empty.\n\n" );
+        printf("\nList is empty.\n\n");
     } /* end if */
     else {
-        printf( "The list is:\n" );
+        printf("\nThe list is:\n");
 
         /* while not the end of the list */
         while ( currentPtr != NULL ) {
-            printf( "%c --> ", currentPtr->data );
+            printf("%c --> ", currentPtr->data);
             currentPtr = currentPtr->nextPtr;
         } /* end while */
 
-        printf( "NULL\n\n" );
+        printf("NULL\n\n");
     } /* end else */
 } /* end function printList */
+
+
+
 
 
 
@@ -181,9 +188,12 @@ void insert( ListNodePtr *sPtr, char value )
     } /* end if */
 
     else {
-        printf( "%c not inserted. No memory available.\n", value );
+        printf("%c not inserted. No memory available.\n", value );
     } /* end else */
 } /* end function insert */
+
+
+
 
 
 

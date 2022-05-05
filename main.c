@@ -110,7 +110,7 @@ int main() {
             // Service 3 - PostFeed
             if (choice == 3)
             {
-                printf( "Enter a character: " );
+                printf("\n\nEnter a character to add to the feed: " );
                 scanf( "\n%c", &item );
                 insert( &startPtr, item ); /* insert item in list */
                 printList( startPtr );
