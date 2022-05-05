@@ -8,14 +8,20 @@
 
 void create_twitter_system(twitter * twitter_system){
 
-    int i, numOfUsers = 0;
+    int i, numOfUsers = 101;
     twitter_system->num_users = 0;
     twitter_system->num_tweets = 0;
 
     printf("Hello to Twitter!\n");
-    printf("Please enter the amount of users (1-100) that you want to input into Twitter: ");
 
-    scanf("%d", &numOfUsers);
+    while(numOfUsers > 100){
+        printf("\nPlease enter the amount of users (1-100) that you want to input into Twitter: ");
+        scanf("%d", &numOfUsers);
+
+        if (numOfUsers < 1){
+            numOfUsers = 101;
+        }
+    }
     scanf("%c", (char *) stdin); //needed this code to flush out the leftover /n otherwise fgets won't work properly
 
     for(i = 0;i < numOfUsers;i++){
