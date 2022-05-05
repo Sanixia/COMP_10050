@@ -59,5 +59,9 @@ void unfollow_user(twitter * twitter_system, int userNumber);
 
 void postTweet(twitter * twitter_system, int userNumber, int tweetNumber);
 
+void getNewsFeed(twitter * twitter_system, int userNumber);
+
+int isFollowing(twitter * twitter_system, char username[USR_LENGTH], int following, int userNumber);
+
 
 

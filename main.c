@@ -124,7 +124,7 @@ int main() {
 
             if (choice == 4)
             {
-                printList( startPtr );
+                getNewsFeed (&twitter_system, j);
             }
 
 
