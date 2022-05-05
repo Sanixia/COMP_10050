@@ -130,10 +130,10 @@ void printList( ListNodePtr currentPtr )
 {
     /* if list is empty */
     if ( currentPtr == NULL ) {
-        printf("\nList is empty.\n\n");
+        printf("\nThere are no tweets.\n\n");
     } /* end if */
     else {
-        printf("\nThe list is:\n");
+        printf("\nThe tweets are:\n");
 
         /* while not the end of the list */
         while ( currentPtr != NULL ) {
@@ -159,6 +159,8 @@ void printList( ListNodePtr currentPtr )
 void insert( ListNodePtr *sPtr, char value )
 {
     ListNodePtr newPtr = malloc( sizeof( ListNode ) ); /* create node */
+
+
     if ( newPtr != NULL )          /* is space available */
     {
 
@@ -186,6 +188,9 @@ void insert( ListNodePtr *sPtr, char value )
             newPtr->nextPtr = currentPtr;
         } /* end else */
     } /* end if */
+
+
+
 
     else {
         printf("%c not inserted. No memory available.\n", value );

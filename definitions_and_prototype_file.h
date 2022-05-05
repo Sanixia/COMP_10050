@@ -57,7 +57,7 @@ void follow_user(twitter * twitter_system, int userNumber);
 
 void unfollow_user(twitter * twitter_system, int userNumber);
 
-void postTweet(twitter * twitter_system, int userNumber);
+void postTweet(twitter * twitter_system, int userNumber, int tweetNumber);
 
 
 

@@ -7,7 +7,7 @@
 
 
 void follow_user(twitter * twitter_system, int userNumber){
-    int i, j, k, l;                                                                     //variables for loops
+    int i, j, k;                                                                     //variables for loops
     int checkIfInList = 0, checkAgain = 0, checkValidUsername = 0, followerNumber = 0;
     char name[30];                                                                      //user input name variable
 

@@ -26,6 +26,7 @@ typedef ListNode *ListNodePtr; /* synonym for ListNode* */
 
 /* prototypes */
 void insert( ListNodePtr *sPtr, char value );
+//void insert( ListNodePtr *sPtr, struct twitter * twitter_system);
 char delete( ListNodePtr *sPtr, char value );
 int isEmpty( ListNodePtr sPtr );
 void printList( ListNodePtr currentPtr );
