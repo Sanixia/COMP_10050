@@ -1,6 +1,6 @@
 //
 // Created by Lili on 30/03/2022.
-//
+// Contains what the title states
 
 #ifndef ASSIGNMENT2_TWITTER_CREATE_H
 #define ASSIGNMENT2_TWITTER_CREATE_H
