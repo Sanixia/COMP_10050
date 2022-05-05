@@ -45,6 +45,10 @@ int main() {
     int choice;
 
 
+    ListNodePtr startPtr = NULL; // initially there are no nodes
+    char item; // char entered by user
+
+
     for (j=0; j<twitter_system.num_users; j++)
     {
         check = 1;
@@ -106,8 +110,7 @@ int main() {
             // Service 4 - Get News Feed
 
 
-            ListNodePtr startPtr = NULL; // initially there are no nodes
-            char item; // char entered by user
+
 
 
             if (choice == 4)
