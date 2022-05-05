@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "definitions_and_prototype_file.h"
+#include "feedStack.h"
 
 
 
@@ -53,7 +54,8 @@ int main() {
             printf("1) Follow\n");
             printf("2) Unfollow\n");
             printf("3) Post Feed\n");
-            printf("4) Get News Feed\n");
+            //printf("4) Get News Feed\n");
+            printf("4) TEMPORARY ADD TO STACK ie POST\n");
             printf("5) Delete Account\n");
             printf("6) End Turn\n");
             printf("7) End Twitter\n");
@@ -99,11 +101,28 @@ int main() {
             }
 
 
+
+
             // Service 4 - Get News Feed
+
+
+            ListNodePtr startPtr = NULL; // initially there are no nodes
+            char item; // char entered by user
+
+
             if (choice == 4)
             {
-
+                printf( "Enter a character: " );
+                scanf( "\n%c", &item );
+                insert( &startPtr, item ); /* insert item in list */
+                printList( startPtr );
             }
+
+
+
+
+
+
 
 
             // Service 5 - Delete Account

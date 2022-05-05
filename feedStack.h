@@ -6,3 +6,31 @@
 #define COMP_10050_FEEDSTACK_H
 
 #endif //COMP_10050_FEEDSTACK_H
+
+
+
+/* self-referential structure */
+struct listNode {
+    char data;
+    struct listNode *nextPtr; /* pointer to next node */
+}; /* end structure listNode */
+
+
+
+typedef struct listNode ListNode; /* synonym for struct listNode */
+typedef ListNode *ListNodePtr; /* synonym for ListNode* */
+
+
+
+
+
+/* prototypes */
+void insert( ListNodePtr *sPtr, char value );
+char delete( ListNodePtr *sPtr, char value );
+int isEmpty( ListNodePtr sPtr );
+void printList( ListNodePtr currentPtr );
+void instructions( void );
+
+
+
+

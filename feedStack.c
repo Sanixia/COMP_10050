@@ -22,22 +22,7 @@
 
 
 
-/* self-referential structure */
-struct listNode {
-    char data;
-    struct listNode *nextPtr; /* pointer to next node */
-}; /* end structure listNode */
 
-
-typedef struct listNode ListNode; /* synonym for struct listNode */
-typedef ListNode *ListNodePtr; /* synonym for ListNode* */
-
-/* prototypes */
-void insert( ListNodePtr *sPtr, char value );
-char delete( ListNodePtr *sPtr, char value );
-int isEmpty( ListNodePtr sPtr );
-void printList( ListNodePtr currentPtr );
-void instructions( void );
 
 /* For now main is commented out as two can't exist at the same time
  * big rework as switch cases wont be used
