@@ -36,7 +36,6 @@ int main() {
     int j;
     int check = 1;
     int choice;
-    int z;
 
 
     ListNodePtr startPtr = NULL; // initially there are no nodes
@@ -108,11 +107,11 @@ int main() {
 
 
 
-                printf("\n\nEnter a character to add to the feed: " );
-                scanf( "\n%c", &item );
-                insert( &startPtr, item ); /* insert item in list */
-                printList( startPtr );
-                z++;
+                //printf("\n\nEnter a character to add to the feed: " );
+                //scanf( "\n%c", &item );
+                //insert( &startPtr, item ); /* insert item in list */
+                //printList( startPtr );
+
             }
 
 
