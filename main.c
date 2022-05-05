@@ -94,7 +94,8 @@ int main() {
             // Service 3 - PostFeed
             if (choice == 3)
             {
-
+                scanf("%c", (char *) stdin);
+                postTweet(&twitter_system, j);
             }
 
 
@@ -116,7 +117,7 @@ int main() {
             if (choice == 6)
             {
                 if (j !=twitter_system.num_users-1) {
-                    printf("\nMoving onto next user");
+                    printf("\nMoving onto next user\n");
                 }
 
                 check = 0;
