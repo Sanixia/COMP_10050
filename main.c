@@ -58,8 +58,7 @@ int main() {
             printf("1) Follow\n");
             printf("2) Unfollow\n");
             printf("3) Post Feed\n");
-            //printf("4) Get News Feed\n");
-            printf("4) TEMPORARY ADD TO STACK ie POST\n");
+            printf("4) Get News Feed\n");
             printf("5) Delete Account\n");
             printf("6) End Turn\n");
             printf("7) End Twitter\n");
@@ -97,27 +96,36 @@ int main() {
 
 
 
+            /*
             // Service 3 - PostFeed
             if (choice == 3)
             {
                 scanf("%c", (char *) stdin);
                 postTweet(&twitter_system, j);
             }
+            */
+
+
+
+            // Service 3 - PostFeed
+            if (choice == 3)
+            {
+                printf( "Enter a character: " );
+                scanf( "\n%c", &item );
+                insert( &startPtr, item ); /* insert item in list */
+                printList( startPtr );
+            }
+
+
+
 
 
 
 
             // Service 4 - Get News Feed
 
-
-
-
-
             if (choice == 4)
             {
-                printf( "Enter a character: " );
-                scanf( "\n%c", &item );
-                insert( &startPtr, item ); /* insert item in list */
                 printList( startPtr );
             }
 
