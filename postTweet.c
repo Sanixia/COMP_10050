@@ -10,7 +10,7 @@
 
 void postTweet(twitter * twitter_system, int userNumber){
 
-    printf("\nPlease type in your tweet (max 270 characters): \n");
+    printf("\nPlease type in your tweet (max 270 characters): ");
 
     fgets(twitter_system->news_feed->msg, TWEET_LENGTH, stdin);
     if(twitter_system->news_feed->msg[strlen(twitter_system->news_feed->msg) - 1]  == '\n'){
