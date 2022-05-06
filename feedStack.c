@@ -12,51 +12,51 @@
 
 
 
-
+/*
 
 
 //// Insert function allows thing to be put in at the top of the list
 //// No work here other than replacing nodes with tweets
 
 
-/* Insert a new value into the list in sorted order */
-void insert( ListNodePtr *sPtr, char value[] )
+// Insert a new value into the list in sorted order
+void insert( ListNodePtr *sPtr, char value[USR_LENGTH] )
 {
-    ListNodePtr newPtr = malloc( sizeof( ListNode ) ); /* create node */
+    ListNodePtr newPtr = malloc( sizeof( ListNode ) ); // creates node
 
 
-    if ( newPtr != NULL )          /* is space available */
+    if ( newPtr != NULL )
     {
 
-        newPtr->msg = value; /* place value in node */
-        newPtr->nextPtr = NULL; /* node does not link to another node */
+        newPtr->msg = value; // place value in node
+        newPtr->nextPtr = NULL;
 
-        ListNodePtr previousPtr = NULL;  /* pointer to previous node in list */
-        ListNodePtr currentPtr = *sPtr; /* pointer to current node in list */
+        ListNodePtr previousPtr = NULL;  // pointer to previous node
+        ListNodePtr currentPtr = *sPtr;  // pointer to current node
 
 
 
         //// Will loop until it finds a NULL spot i.e. top of the queue
         while ( currentPtr != NULL ) {
-            previousPtr = currentPtr; /* walk to ... */
-            currentPtr = currentPtr->nextPtr; /* ... next node */
-        } /* end while */
+            previousPtr = currentPtr;
+            currentPtr = currentPtr->nextPtr;
+        }
 
-        /* insert new node at beginning of list */
+        // insert new node at beginning of list
         if ( previousPtr == NULL ) {
             newPtr->nextPtr = *sPtr;
             *sPtr = newPtr;
-        } /* end if */
-        else { /* insert new node between previousPtr and currentPtr */
+        }
+        else { // insert new node between previousPtr and currentPtr
             previousPtr->nextPtr = newPtr;
             newPtr->nextPtr = currentPtr;
-        } /* end else */
-    } /* end if */
+        }
+    }
 
     else {
         printf("%c not inserted. No memory available.\n", value );
-    } /* end else */
-} /* end function insert */
+    }
+} // end function insert
 
 
 
@@ -94,7 +94,7 @@ char delete( ListNodePtr *sPtr, char value )
             ListNodePtr tempPtr = currentPtr;
             previousPtr->nextPtr = currentPtr->nextPtr;
             return value;
-        } /
+        }
     }
 
     return '\0';
@@ -136,4 +136,4 @@ void printList( ListNodePtr currentPtr )
 
 
 
-
+*/
