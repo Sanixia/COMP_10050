@@ -27,7 +27,7 @@ void postTweet(twitter * twitter_system, int userNumber, int tweetNumber){
 
     printf("\n* %s", twitter_system->news_feed[tweetNumber].msg);
 
-    printf("%d", twitter_system->news_feed->id);
+    printf("%d", twitter_system->news_feed[tweetNumber].id);
 
     //insert(ListNodePtr *startPtr, &twitter_system,struct twitter_system->tweet[userNumber]);
 }

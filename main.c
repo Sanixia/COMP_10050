@@ -125,6 +125,8 @@ int main() {
             if (choice == 4)
             {
                 getNewsFeed (&twitter_system, j);
+
+                //getNewsFeed (&twitter_system, twitter_system->max_users[j]);
             }
 
 
