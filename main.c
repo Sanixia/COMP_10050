@@ -136,7 +136,8 @@ int main() {
             // Service 5 - Delete Account
             if (choice == 5)
             {
-
+                scanf("%c", (char *) stdin);
+                deleteAccount(&twitter_system, j, twitter_system.max_users[j].username);
             }
 
 

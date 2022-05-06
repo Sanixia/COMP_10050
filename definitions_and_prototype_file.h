@@ -65,6 +65,6 @@ void getNewsFeed(twitter * twitter_system, int user);
 
 int isFollowing(twitter * twitter_system,  int userNumber, int news_feedNum);
 
-void deleteAccount(twitter * twitter_system, int userNumber);
+void deleteAccount(twitter * twitter_system, int userNumber, char name[]);
 
-void removal(int const * number, char name[], char characters[][USR_LENGTH]);
+void removal(int *number, char name[], char characters[][USR_LENGTH]);

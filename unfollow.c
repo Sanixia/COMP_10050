@@ -60,10 +60,6 @@ void unfollow_user(twitter * twitter_system, int userNumber) {
 
 
 
-
-            twitter_system->max_users[userNumber].num_following--;
-            twitter_system->max_users[followerNumber].num_followers--;
-
             printf("%s has been removed from your following list!\n", name);
 
             printf("\nCurrent number of followers: %d \nCurrent number of users following: %d\n",
@@ -77,7 +73,7 @@ void unfollow_user(twitter * twitter_system, int userNumber) {
 
 
 
-void removal(int const * number, char name[], char characters[][USR_LENGTH]){
+void removal(int  *number, char name[], char characters[][USR_LENGTH]){
 
     int m, l;
     for(l = 0; l < *number; l++){
@@ -88,6 +84,7 @@ void removal(int const * number, char name[], char characters[][USR_LENGTH]){
                 strcpy(characters[m], characters[m+1]);  //once person is found, everything after the person's
                                                                     //index in list is copied back by one to reduce the list
             }
+            (*number)--; //decrements the user followings/followers
         }
     }
 }
