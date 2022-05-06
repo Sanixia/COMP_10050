@@ -27,10 +27,9 @@ int main() {
 
 
 
-
-
-    // Michal section
-
+    //
+    // Main Twitter menu system
+    //
 
 
     int j;
@@ -38,12 +37,18 @@ int main() {
     int choice;
 
 
+
+     // Made to work with link list
+    /*
     ListNodePtr startPtr = NULL; // initially there are no nodes
     char item; // char entered by user
+    */
 
-
+    // Menu system loops through each user
     for (j=0; j<twitter_system.num_users; j++)
     {
+        // error check loop, make sures the user only enter anything from 1 to 7
+
         check = 1;
         while (check == 1)
         {
@@ -57,10 +62,13 @@ int main() {
             printf("7) End Twitter\n");
 
 
+            // users choice
 
             printf("Type in the digit of the function that you'd like to access: ");
             scanf("%d", &choice);
 
+
+            // error check for valid input
 
             if (choice <= 7 && choice >= 1) {
                 check = 1;
@@ -71,7 +79,12 @@ int main() {
             }
 
 
-            // Service 1 - Follow
+
+            //// Service 1 - Follow
+
+            // Twitter_system (mother struct) and the users identifier number are sent as arguments to follow function
+            // User is presented with the list of other users that he hasn't yet followed and is given a choice of who to follow
+
             if (choice == 1)
             {
                 scanf("%c", (char *) stdin);
@@ -80,7 +93,11 @@ int main() {
 
 
 
-            // Service 2 - Unfollow
+            //// Service 2 - Unfollow
+
+            // Twitter_system and the user number are sent as arguments to unfollow function
+            // User is presented with the list users currently following and is given a choice of who to unfollow
+
             if (choice == 2)
             {
                 scanf("%c", (char *) stdin);
@@ -89,19 +106,21 @@ int main() {
 
 
 
+            //// Service 3 - PostFeed
 
+            // Twitter_system, the user number, and number of tweets on the system are sent as arguments to the postFeed function
+            // User is prompted a char array message to post
 
-
-
-            // Service 3 - PostFeed
             if (choice == 3)
             {
+                // This section of the code is the current working postFeed, which is stored in newsFeed
 
                 scanf("%c", (char *) stdin);
                 postTweet(&twitter_system, j, twitter_system.num_tweets);
                 twitter_system.num_tweets ++;
 
 
+                // This section is the work-in-progress postFeed that should utilize a link list for its tweets
 
                 /*
                 printf("\n\nEnter a character to add to the feed: " );
@@ -113,11 +132,11 @@ int main() {
 
 
 
+            //// Service 4 - Get News Feed
 
-
-
-
-            // Service 4 - Get News Feed
+            // Twitter_system and the user number are sent as arguments to GetNewsFeed function
+            // Currently implemented to work for the newsFeed array
+            // Retrieves up to the 10 most recent tweets from yourself or users followed
 
             if (choice == 4)
             {
@@ -128,12 +147,8 @@ int main() {
 
 
 
+            //// Service 5 - Delete Account
 
-
-
-
-
-            // Service 5 - Delete Account
             if (choice == 5)
             {
                 scanf("%c", (char *) stdin);
@@ -141,7 +156,11 @@ int main() {
             }
 
 
-            // Service 6 - End Turn
+
+            //// Service 6 - End Turn
+
+            // This service simply escapes the inner loop and goes to the next user
+
             if (choice == 6)
             {
                 if (j !=twitter_system.num_users-1) {
@@ -152,7 +171,11 @@ int main() {
             }
 
 
-            // Service 7 - End Twitter
+
+            //// Service 7 - End Twitter
+
+            // This service exits both loops and terminates the Twitter system
+
             if (choice == 7)
             {
                 printf("\nTwitter has Terminated");
