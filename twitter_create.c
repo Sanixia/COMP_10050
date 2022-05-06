@@ -12,7 +12,7 @@ void create_twitter_system(twitter * twitter_system){
     twitter_system->num_users = 0;
     twitter_system->num_tweets = 0;
 
-    printf("Hello to Twitter!\n");
+    printf("Welcome to Twitter!\n");
 
     while(numOfUsers > 100){
         printf("\nPlease enter the amount of users (1-100) that you want to input into Twitter: ");
