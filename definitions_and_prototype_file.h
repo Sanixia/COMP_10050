@@ -29,7 +29,7 @@ typedef struct tweet{
     int id;
     char msg[TWEET_LENGTH];
     char user[USR_LENGTH];
-
+    struct listNode *nextPtr;
 }tweet;
 
 typedef struct user{

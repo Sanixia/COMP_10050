@@ -9,18 +9,10 @@
 
 
 
-/* self-referential structure */
-struct listNode {
-    char data;
-    struct listNode *nextPtr; /* pointer to next node */
-}; /* end structure listNode */
 
 
-
-typedef struct listNode ListNode; /* synonym for struct listNode */
-typedef ListNode *ListNodePtr; /* synonym for ListNode* */
-
-
+typedef struct tweet ListNode;
+typedef ListNode *ListNodePtr;
 
 
 
