@@ -8,7 +8,7 @@
 
 void follow_user(twitter * twitter_system, int userNumber){
     int i, j, k;                                                                     //variables for loops
-    int checkIfInList = 0, checkAgain = 0, checkValidUsername = 0, followerNumber = 0;
+    int checkIfInList = 0, checkAgain = 0, checkValidUsername = 0, followerNumber = 0, isFollower = 0;
     char name[30];                                                                      //user input name variable
 
 
@@ -51,10 +51,22 @@ void follow_user(twitter * twitter_system, int userNumber){
 
             for(k = 0;k < twitter_system->num_users;k++){                //will check if inputted username is a valid username
 
-                if ((strcmp(twitter_system->max_users[k].username, name) == 0) && (strcmp( twitter_system->max_users[userNumber].username, twitter_system->max_users[k].username) != 0)){
-                    checkValidUsername = 1;
-                    followerNumber = k;                                  //used to add the user into the follower's list
-                    k = twitter_system->num_users;
+                if ((strcmp(twitter_system->max_users[k].username, name) == 0) &&
+                (strcmp( twitter_system->max_users[userNumber].username, twitter_system->max_users[k].username) != 0)){
+                    isFollower = 0;
+
+                    for (j = 0; j <= twitter_system->max_users[userNumber].num_following;j++){
+                        if (strcmp(twitter_system->max_users[userNumber].following[j], name) == 0){
+                            isFollower += 1;
+                        }
+                    }
+                    if (isFollower == 0){
+
+                        checkValidUsername = 1;
+                        followerNumber = k;
+                        k = twitter_system->num_users;
+
+                    }
                 }
             }
         }
