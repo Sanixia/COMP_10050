@@ -22,7 +22,7 @@ int main() {
         printf("User: %s; Followers: %d; Following: %d\n",
                twitter_system.max_users[i].username,
                twitter_system.max_users[i].num_followers,
-               twitter_system.max_users[i].num_followers );
+               twitter_system.max_users[i].num_following );
     }
 
 
@@ -117,7 +117,7 @@ int main() {
 
                 scanf("%c", (char *) stdin);
                 postTweet(&twitter_system, j, twitter_system.num_tweets);
-                twitter_system.num_tweets ++;
+                twitter_system.num_tweets++;
 
 
                 // This section is the work-in-progress postFeed that should utilize a link list for its tweets
@@ -153,6 +153,8 @@ int main() {
             {
                 scanf("%c", (char *) stdin);
                 deleteAccount(&twitter_system, j, twitter_system.max_users[j].username);
+                printf("\nAccount deleted, moving onto next user\n");
+                check = 0;
             }
 
 

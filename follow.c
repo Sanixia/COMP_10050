@@ -57,10 +57,10 @@ void follow_user(twitter * twitter_system, int userNumber){
 
                     for (j = 0; j <= twitter_system->max_users[userNumber].num_following;j++){
                         if (strcmp(twitter_system->max_users[userNumber].following[j], name) == 0){
-                            isFollower += 1;
+                            isFollower += 1;                                                            //checks to see if given user is a follower
                         }
                     }
-                    if (isFollower == 0){
+                    if (isFollower == 0){  //if not, then ends while loop
 
                         checkValidUsername = 1;
                         followerNumber = k;

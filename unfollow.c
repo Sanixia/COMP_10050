@@ -73,18 +73,18 @@ void unfollow_user(twitter * twitter_system, int userNumber) {
 
 
 
-void removal(int  *number, char name[], char characters[][USR_LENGTH]){
+void removal(int  *numberOf, char name[], char characters[][USR_LENGTH]){
 
     int m, l;
-    for(l = 0; l < *number; l++){
+    for(l = 0; l < *numberOf; l++){
         if(strcmp(characters[l], name) == 0){
 
-            for(m = l; m < *number; m++){
+            for(m = l; m < *numberOf; m++){
 
                 strcpy(characters[m], characters[m+1]);  //once person is found, everything after the person's
-                                                                    //index in list is copied back by one to reduce the list
+                                                                    //index in list is copied back by one to reduce the list and remove the person
             }
-            (*number)--; //decrements the user followings/followers
+            (*numberOf)--; //decrements the user followings/followers
         }
     }
 }
